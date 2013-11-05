@@ -1,0 +1,3792 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0105)http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><script>var gapi={plusone:{render:function(){},go:function(){}}};</script><script type="text/javascript" async="" src="https://apis.google.com/js/plusone.js"></script><script>var urchinTracker=function(){},_gaq={push:function(){try {if(arguments[0][0]=='_link')window.location.href=arguments[0][1]}catch(er){}}},_gat={_createTracker:function(){}, _getTracker:function(){return{__noSuchMethod__:function(){},_link:function(o){if(o)location.href=o;},_linkByPost:function(){return true;},_getLinkerUrl:function(o){return o;},_trackEvent:function(){}}}};</script><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!--<base href="http://www.linuxquestions.org/questions/">--><base href="."><!--[if IE]></base><![endif]-->
+	
+
+<meta name="keywords" content="how,get,cpu,information,Linux,machine, how to get cpu information on Linux machine, Linux,how to,tutorial,operating system,linux,red hat,mandrake,security,linux help,installation,question,forum">
+<meta name="description" content="Hi, I want to display cpu information like model number, vender information, and how many cpu&#39;s are there in the system (Linux machine) Is there any">
+
+
+<!-- CSS Stylesheet -->
+<style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.8 Beta 1 CSS
+* Style: 'LQ Style - child of default'; Style ID: 7
+*/
+@import url("http://www.linuxquestions.org/questions/clientscript/vbulletin_css/style-7eb8640c-00007.css");
+</style>
+<link rel="stylesheet" type="text/css" href="./get cpu info_files/vbulletin_important.css">
+
+
+<!-- / CSS Stylesheet -->
+
+<script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript" src="./get cpu info_files/yahoo-dom-event.js"></script><style type="text/css"></style>
+<script type="text/javascript" src="./get cpu info_files/connection-min.js"></script>
+<script type="text/javascript">
+<!--
+var SESSIONURL = "s=4b589c5ef8c5868e09b0d74f68b9f923&";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "https://lqo-thequestionsnetw.netdna-ssl.com/questions/images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</script>
+
+<script type="text/javascript" src="./get cpu info_files/vbulletin_global.js"></script>
+<script type="text/javascript" src="./get cpu info_files/vbulletin_menu.js"></script>
+<link rel="shortcut icon" href="http://www.linuxquestions.org/favicon.ico" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="LQ Latest Threads" href="http://www.linuxquestions.org/syndicate/lqlatest.xml">
+<link rel="alternate" type="application/rss+xml" title="LQ News and Articles" href="http://www.linuxquestions.org/syndicate/lqnews.rss">
+<link rel="alternate" type="application/rss+xml" title="LQ Zero Reply Threads" href="http://www.linuxquestions.org/syndicate/lqnoreplies.xml">
+<link rel="search" type="application/opensearchdescription+xml" title="LinuxQuestions.org" href="http://static.linuxquestions.org/lq-osd.xml">
+<script type="text/javascript" src="./get cpu info_files/json-min.js"></script>
+<script type="text/javascript" src="./get cpu info_files/saved_resource"></script><script type="text/javascript">
+<!--
+function bb2_addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else {
+		window.onload = function() {
+			oldonload();
+			func();
+		}
+	}
+}
+
+bb2_addLoadEvent(function() {
+	for ( i=0; i < document.forms.length; i++ ) {
+		if (document.forms[i].method == 'post') {
+			var myElement = document.createElement('input');
+			myElement.setAttribute('type', 'hidden');
+			myElement.name = 'bb2_screener_';
+			myElement.value = '1383688618 169.199.30.254 169.199.30.254';
+			document.forms[i].appendChild(myElement);
+		}
+	}
+});
+// --></script>
+		
+	<title> how to get cpu information on Linux machine</title>
+
+	<style type="text/css" id="vbulletin_showthread_css">
+	<!--
+	
+	#links div { white-space: nowrap; }
+	#links img { vertical-align: middle; }
+	-->
+	</style>
+
+<script type="text/javascript"><!--
+window.google_analytics_uacct = 'UA-71419-4'; var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-71419-4'], ['_trackPageview'], ['_trackPageLoadTime']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();
+//--></script>
+<style>#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt{border:solid 2px #fff !important;box-sizing:content-box !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-webkit-border-radius:5px !important;-webkit-box-shadow:0px 0px 20px #000 !important;-webkit-box-sizing:content-box !important;}.nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt-blocked{color:#777 !important;display:inline !important;text-decoration:line-through !important;}#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt br{display:block !important;}#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt span{background:transparent !important;}#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt div{border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt a{font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}@media print{#nbtlpojemijcftutedntxbruveuidxrnwhbfzpkzztt{display:none !important;}}</style></head>
+<body onload="" class=" hasGoogleVoiceExt">
+<div id="header"></div>
+<!-- logo -->
+<a name="top"></a>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+<tbody><tr>
+    <td align="left"><a href="http://www.linuxquestions.org/questions/"><img src="./get cpu info_files/LinuxQuestions.png" border="0" alt="LinuxQuestions.org" title="LinuxQuestions.org"></a></td>
+    <td align="right">
+     <div align="right">Welcome to the most active <strong><a href="http://www.linuxquestions.org/questions/">Linux Forum</a></strong> on the web.</div>
+    </td>
+</tr>
+</tbody></table>
+<!-- /logo -->
+
+<!-- content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+
+
+
+
+<div class="vbmenu_popup" id="vbbloglinks_menu" style="display:none;margin-top:3px" align="left">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead"><a href="http://www.linuxquestions.org/questions/blog/">Blogs</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/recent-entries/">Recent Entries</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/best-entries/">Best Entries</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/best-blogs/">Best Blogs</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/all/">Blog List</a></td>
+	</tr>
+	
+	<tr>
+		<td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/blog_search.php?do=search">Search Blogs</a></td>
+	</tr>
+	
+	</tbody></table>
+</div>
+<script type="text/javascript">
+<!--
+function log_out()
+{
+    ht = document.getElementsByTagName("html");
+    ht[0].style.filter = "progid:DXImageTransform.Microsoft.BasicImage(grayscale=1)";
+    if (confirm('Are you sure you want to log out?'))
+    {
+        return true;
+    }
+    else
+    {
+        ht[0].style.filter = "";
+        return false;
+    }
+}
+//-->
+</script>
+<div style="text-align:center;margin-bottom:15px" align="center"> 
+<script type="text/javascript"><!--
+google_ad_client = "pub-4420048478783872";
+/* LQ Main - Top Leaderboard */
+google_ad_slot = "2731986808";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- START: LQ Table Top -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+<td class="page" valign="top">
+<!-- END: LQ Table Top -->
+<!-- nav buttons bar -->
+<div align="center">
+	<table class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px">
+	<tbody><tr align="center">
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/" accesskey="1">Home</a></td>
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/questions/">Forums</a></td>
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/hcl/">HCL</a></td>
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/reviews/">Reviews</a></td>
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/linux/answers/">Tutorials</a></td>
+		<td class="vbmenu_control"><a href="http://www.linuxquestions.org/linux/articles/">Articles</a></td>
+		
+			<td class="vbmenu_control"><a href="http://www.linuxquestions.org/questions/register.php" rel="nofollow">Register</a></td>
+		
+				
+			
+				<td id="navbar_search" class="vbmenu_control" style="cursor: pointer;"><a href="http://www.linuxquestions.org/questions/search.php" accesskey="4" rel="nofollow">Search</a> <script type="text/javascript"> vbmenu_register("navbar_search"); </script> <img src="./get cpu info_files/menu_open.gif" border="0" title="" alt=""></td>
+			
+			
+		
+		
+	</tr>
+	</tbody></table>
+</div>
+<!-- / nav buttons bar -->
+
+
+<!-- NAVBAR POPUP MENUS -->
+	
+	
+	<!-- header quick search form -->
+	<div class="vbmenu_popup" id="navbar_search_menu" style="display:none">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tbody><tr>
+			<td class="thead">Search Forums</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+			<form action="http://www.linuxquestions.org/questions/search.php" method="post">
+				<input type="hidden" name="do" value="process">
+				<input type="hidden" name="showposts" value="1">
+				<input type="hidden" name="quicksearch" value="1">
+				<input type="hidden" name="s" value="4b589c5ef8c5868e09b0d74f68b9f923">
+	<input type="hidden" name="securitytoken" value="guest">
+				<input type="text" class="bginput" name="query" size="20"><input type="submit" class="button" value="Go"><br>
+			</form>
+			</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php" accesskey="4" rel="nofollow">Advanced Search</a></td>
+		</tr>
+
+		<tr>
+			<td class="thead">Search Tags</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite"><form action="http://www.linuxquestions.org/questions/search.php" method="post"><input type="text" class="bginput" name="tag" size="20"><input type="hidden" name="do" value="process"><input type="hidden" name="posttags" value="1"><input type="hidden" name="s" value="4b589c5ef8c5868e09b0d74f68b9f923">
+	<input type="hidden" name="securitytoken" value="guest"><input type="submit" class="button" value="Go"><br></form>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="thead">Search LQ Wiki</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+            <form action="http://wiki.linuxquestions.org/wiki/Special:Search">
+              <input name="fulltext" value="Search" type="hidden">              <input name="search" class="bginput" type="text" size="20"><input type="submit" class="button" value="Go"><br>
+            </form>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="thead">Search Tutorials/Articles</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+		<form action="http://www.linuxquestions.org/linux/search/node" method="post">
+			<input name="op" value="Search" type="hidden">
+			<input class="bginput" name="edit[keys]" size="20" type="text"><input type="submit" class="button" value="Go"><br>
+		</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="thead">Search HCL</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+
+		<form method="get" action="http://www.linuxquestions.org/hcl/showcat.php">
+			<input name="cat" value="all" type="hidden">
+			<input name="stype" value="1" type="hidden">
+			<input name="si" size="20" class="bginput" type="text"><input type="submit" class="button" value="Go"><br>
+		</form>
+			</td>
+		</tr>
+		<tr>
+			<td class="thead">Search Reviews</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+		<form method="get" action="http://www.linuxquestions.org/reviews/showcat.php">
+			<input name="cat" value="all" type="hidden">
+			<input name="stype" value="1" type="hidden">
+			<input name="si" size="20" class="bginput" type="text"><input type="submit" class="button" value="Go"><br>
+		</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td class="thead">Search ISOs</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="nohilite">
+		<form method="get" action="http://iso.linuxquestions.org/search.php">
+			<input name="query" size="20" class="bginput" type="text"><input type="submit" class="button" value="Go"><br>
+		</form>
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+	<!-- / header quick search form -->
+	
+
+	
+<!-- / NAVBAR POPUP MENUS -->
+
+<!-- PAGENAV POPUP -->
+
+	<div class="vbmenu_popup" id="pagenav_menu" style="display: none; position: absolute; z-index: 50;">
+		<table cellpadding="4" cellspacing="1" border="0">
+		<tbody><tr>
+			<td class="thead" nowrap="nowrap">Go to Page...</td>
+		</tr>
+		<tr>
+			<td class="vbmenu_option" title="">
+			<form action="http://www.linuxquestions.org/questions/" method="get" onsubmit="return this.gotopage()" id="pagenav_form">
+				<input type="text" class="bginput" id="pagenav_itxt" style="font-size:11px" size="4">
+				<input type="button" class="button" id="pagenav_ibtn" value="Go">
+			</form>
+			</td>
+		</tr>
+		</tbody></table>
+	</div>
+
+<!-- / PAGENAV POPUP -->
+
+
+<!-- breadcrumb, login, pm info -->
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-top:0px">
+<tbody><tr>
+	<td class="alt1" width="100%">
+		
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr valign="bottom">
+				<td><a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#" onclick="history.back(1); return false;"><img src="./get cpu info_files/navbits_start.gif" alt="Go Back" border="0" title="Go Back"></a></td>
+				<td>&nbsp;</td>
+				<td width="100%"><span class="navbar"><a href="http://www.linuxquestions.org/" accesskey="1">LinuxQuestions.org</a></span> 
+
+<span class="navbar">&gt; <a href="http://www.linuxquestions.org/questions/" accesskey="1">Forums</a></span> 
+
+
+	<span class="navbar">&gt; <a href="http://www.linuxquestions.org/questions/non-%2Anix-forums-16/">Non-*NIX Forums</a></span>
+
+
+	<span class="navbar">&gt; <a href="http://www.linuxquestions.org/questions/programming-9/">Programming</a></span>
+
+</td>
+			</tr>
+			<tr>
+				<td class="navbar" style="font-size:10pt; padding-top:1px" colspan="3"><a href="./get cpu info_files/get cpu info.html"><img class="inlineimg" src="./get cpu info_files/navbits_finallink.gif" alt="Reload this Page" border="0" title="Reload this Page"></a> <strong>
+	 how to get cpu information on Linux machine
+
+</strong></td>
+			</tr>
+			</tbody></table>			
+		
+	</td>	
+	
+	
+		
+		<td class="alt2" nowrap="nowrap" style="padding:0px">
+			
+		<!-- login form -->
+		<form action="http://www.linuxquestions.org/questions/login.php" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+		<script type="text/javascript" src="./get cpu info_files/vbulletin_md5.js"></script>
+		<table cellpadding="0" cellspacing="3" border="0">
+		<tbody><tr>
+			<td class="smallfont">User Name</td>
+			<td><input type="text" class="bginput" style="font-size: 11px" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == &#39;User Name&#39;) this.value = &#39;&#39;;" clickev="true"></td>
+			<td class="smallfont" colspan="2" nowrap="nowrap"><label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" checked="checked">Remember Me?</label></td>
+		</tr>
+		<tr>
+			<td class="smallfont">Password</td>
+			<td><input type="password" class="bginput" style="font-size: 11px" name="vb_login_password" size="10" accesskey="p" tabindex="102" clickev="true"></td>
+			<td><input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the &#39;register&#39; button to create a profile for yourself." accesskey="s"></td>
+		</tr>
+		</tbody></table>
+		<input type="hidden" name="s" value="4b589c5ef8c5868e09b0d74f68b9f923">
+	<input type="hidden" name="securitytoken" value="guest">
+		<input type="hidden" name="do" value="login">		
+		<input type="hidden" name="vb_login_md5password">
+		<input type="hidden" name="vb_login_md5password_utf">
+		</form>
+		<!-- / login form -->
+			
+		</td>
+		
+		
+	
+</tr>
+</tbody></table>
+<!-- / breadcrumb, login, pm info -->
+
+
+	<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-top:0px">
+	<tbody><tr>
+		<td class="alt1" width="100%"><strong>Programming</strong> <span class="smallfont">This forum is for all programming questions.<br>
+The question does not have to be directly related to Linux and any language is fair game.</span></td>
+	</tr>
+	</tbody></table>
+
+
+
+
+	<br>
+	<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center">
+	<tbody><tr>
+		<td class="thead">Notices</td>
+	</tr>
+	<tr>
+		<td class="alt1"><div class="navbar_notice" id="navbar_notice_1">
+	Welcome to <strong>LinuxQuestions.org</strong>, a friendly and active Linux Community. <br><br>
+You are currently viewing LQ as a guest.  By joining our community you will have the ability to post topics, receive our newsletter, use the advanced search, subscribe to threads and access many other special features. Registration is quick, simple and absolutely free. <a href="http://www.linuxquestions.org/questions/register.php"><strong>Join our community</strong></a> today!<br><br>
+<strong>Note that registered members see fewer ads, and ContentLink is completely disabled once you log in.</strong><br><br>
+Are you new to LinuxQuestions.org?  Visit the following links:<br>
+<a href="http://www.linuxquestions.org/linux/answers/LinuxQuestions_org/How_to_Use_LinuxQuestions_org">Site Howto</a> |
+<a href="http://www.linuxquestions.org/questions/faq.php">Site FAQ</a> |
+<a href="http://www.linuxquestions.org/linux/sitemap.html">Sitemap</a> | 
+<a href="http://www.linuxquestions.org/questions/register.php">Register Now</a>
+<br><br>If you have any problems with the registration process or your account login, please <a href="http://www.linuxquestions.org/questions/sendmessage.php">contact us</a>.  If you need to reset your password, <a rel="nofollow" href="http://www.linuxquestions.org/questions/login.php?do=lostpw">click here</a>.<br><br>
+<strong>Having a problem logging in? Please visit <a href="http://www.linuxquestions.org/removecookies.php">this page</a> to clear all LQ-related cookies.</strong>
+</div><div class="navbar_notice" id="navbar_notice_18">
+	<br>
+<table>
+<tbody><tr><td>
+<a href="http://linuxquestions.tradepub.com/free/w_mach01/prgm.cgi" rel="nofollow"><img src="http://static.linuxquestions.org/ads/w_mach01c.gif" border="0" align="left" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 1px 1px;" width="0" height="0"></a></td><td>
+
+<em>Introduction to Linux - A Hands on Guide</em>
+<br><br>
+This guide was created as an overview of the Linux Operating System, geared toward new users as an exploration tour and getting started guide, with exercises at the end of each chapter.
+For more advanced trainees it can be a desktop reference, and a collection of the base knowledge needed to proceed with system and network administration. This book contains many real life examples derived from the author's experience as a Linux system and network administrator, trainer and consultant. They hope these examples will help you to get a better understanding of the Linux system and that you feel encouraged to try out things on your own. 
+<br>
+
+<br><br>
+<a href="http://linuxquestions.tradepub.com/free/w_mach01/" rel="nofollow" target="_blank">Click Here</a> to receive this Complete Guide absolutely free.</td></tr>
+</tbody></table>
+</div></td>
+	</tr>
+	</tbody></table>
+
+
+
+	<br>
+
+<!-- <div style="text-align:center;margin-bottom:15px"> 
+google_leaderboard_white_text
+</div>-->
+<div class="KonaBody">
+
+	
+			
+	
+
+
+
+
+
+<a name="poststop" id="poststop"></a>
+
+<!-- controls above postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-bottom:3px">
+<tbody><tr valign="bottom">
+	
+		<td class="smallfont"><a href="http://www.linuxquestions.org/questions/newreply.php?do=newreply&noquote=1&p=1825175" rel="nofollow"><img src="./get cpu info_files/reply.gif" alt="Reply" border="0" title="Reply"></a></td>
+	
+	<td align="right"><div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tbody><tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
+	
+	
+		<td class="alt2"><span class="smallfont" title="Showing results 1 to 15 of 42"><strong>1</strong></span></td>
+ <td class="alt1"><a class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page2.html" title="Show results 16 to 30 of 42">2</a></td><td class="alt1"><a class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page3.html" title="Show results 31 to 42 of 42">3</a></td>
+	<td class="alt1"><a rel="next" class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page2.html" title="Next Page - Results 16 to 30 of 42">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="" id="pagenav.58" style="cursor: pointer;"> <img src="./get cpu info_files/menu_open.gif" border="0" title="" alt=""></td>
+</tr>
+</tbody></table>
+</div></td>
+</tr>
+</tbody></table>
+<!-- / controls above postbits -->
+
+<!-- toolbar -->
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center" style="border-bottom-width:0px">
+<tbody><tr>
+	<td class="tcat" width="100%">
+		<div class="smallfont"><g:plusone size="small" annotation="bubble"><iframe style="width: 30px; height: 19px; border: 0px;"></iframe></g:plusone>
+		
+		
+		&nbsp;
+		</div>
+	</td>
+
+
+<td class="vbmenu_control" id="linkbacktools" nowrap="nowrap" style="cursor: pointer;">
+	<a rel="nofollow" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/?nojs=1#links">LinkBack</a>
+	<script type="text/javascript"> vbmenu_register("linkbacktools"); </script> <img src="./get cpu info_files/menu_open.gif" border="0" title="" alt="">
+</td>
+
+<!--$vbseo_linkback_menu-->
+	
+		<td class="vbmenu_control" id="threadsearch" nowrap="nowrap" style="cursor: pointer;">
+			<a rel="nofollow" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/?nojs=1#goto_threadsearch">Search this Thread</a>
+			<script type="text/javascript"> vbmenu_register("threadsearch"); </script> <img src="./get cpu info_files/menu_open.gif" border="0" title="" alt="">
+		</td>
+	
+	
+	
+
+	
+
+</tr>
+</tbody></table>
+<!-- / toolbar -->
+
+
+
+
+
+
+
+<div id="posts"><!-- post #1825175 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825175" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825175" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825175"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 06:16 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825175" rel="nofollow" id="postcount1825175" name="1"><strong>1</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825175">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->laxmi_cs<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Aug 2005</div>
+				<div>Location: india</div>
+				
+				
+				<div>
+					Posts: 7
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_1825175_201094">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 1" border="0" title="Reputation: 1"> <!-- <smallfont>(1)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_1825175" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+			<!-- icon and title -->
+			<div class="smallfont">
+				
+				<strong><!-- google_ad_section_start -->how to get cpu information on Linux machine<!-- google_ad_section_end --></strong>
+			</div>
+			<hr size="1" style="color:#FFFFFF">
+			<!-- / icon and title -->
+		
+		
+
+		<!-- message -->
+
+
+<div style="float: right; margin-left: 5px; margin-bottom: 5px; margin-top: -3px; margin-right: -3px">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4420048478783872";
+/* LQ Main - Content Medium Rectangle */
+google_ad_slot = "3618825872";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+<script language="javascript" type="text/javascript">
+document.write('[<a href="/questions/lqlogin.php">Log in</a> to <strong>get rid</strong> of this advertisement]');
+</script>[<a href="http://www.linuxquestions.org/questions/lqlogin.php">Log in</a> to <strong>get rid</strong> of this advertisement]
+</div>
+
+		<div id="post_message_1825175"><!-- google_ad_section_start -->Hi,<br>
+<br>
+ I want to display cpu information like model number, vender information, and how many cpu's are there in the system (Linux machine)<br>
+<br>
+Is there any system call ? or /proc/cpuinfo is the only way<br>
+<br>
+And also how get information regarding controllers and adapters installed on system(Linux machine) using any system call<br>
+<br>
+<br>
+<br>
+Thanks and regards<br>
+laxmi<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+<div align="center"><!-- lq_leader_afterpost --> </div>
+
+
+
+<!-- post 1825175 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825175_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">laxmi_cs</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/laxmi_cs-201094/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/laxmi_cs-201094/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=201094">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=201094">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=201094" rel="nofollow">Find More Posts by laxmi_cs</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825175 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825175 --><!-- post #1825176 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825176" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825176" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825176"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 06:22 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825176" rel="nofollow" id="postcount1825176" name="2"><strong>2</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825176">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Nathanael<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: May 2004</div>
+				<div>Location: Karlsruhe, Germany</div>
+				<div>Distribution: debian, gentoo, os x (darwin), ubuntu</div>
+				
+				<div>
+					Posts: 940
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_1825176_119727">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 32" border="0" title="Reputation: 32"> <!-- <smallfont>(32)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_1825176" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_1825176"><!-- google_ad_section_start -->cat /proc/cpuinfo<br>
+cat /proc/meminfo<br>
+dmesg<br>
+lspci<br>
+<br>
+Welcome to LQ :-)<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_1825176">		
+								
+				
+				
+					
+						2 members found this post helpful.
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 1825176 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825176_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Nathanael</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/nathanael-119727/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Nathanael-119727/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=119727">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=119727">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.dihedral.de/">Visit Nathanael's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=119727" rel="nofollow">Find More Posts by Nathanael</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825176 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825176 --><!-- post #1825178 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825178" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825178" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825178"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 06:26 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825178" rel="nofollow" id="postcount1825178" name="3"><strong>3</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825178">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->laxmi_cs<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Aug 2005</div>
+				<div>Location: india</div>
+				
+				
+				<div>
+					Posts: 7
+				</div>
+				
+				<!-- Threadauthor -->
+
+
+<br><strong>Original Poster</strong>
+<!-- / Threadauthor -->
+				
+				<br><div><span id="repdisplay_1825178_201094">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 1" border="0" title="Reputation: 1"> <!-- <smallfont>(1)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_1825178" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_1825178"><!-- google_ad_section_start -->How to get the same things using some system calls<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_1825178">		
+								
+				
+				
+					
+						1 members found this post helpful.
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 1825178 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825178_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">laxmi_cs</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/laxmi_cs-201094/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/laxmi_cs-201094/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=201094">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=201094">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=201094" rel="nofollow">Find More Posts by laxmi_cs</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825178 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825178 --><!-- post #1825192 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825192" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825192" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825192"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 06:39 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825192" rel="nofollow" id="postcount1825192" name="4"><strong>4</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825192">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Nathanael<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: May 2004</div>
+				<div>Location: Karlsruhe, Germany</div>
+				<div>Distribution: debian, gentoo, os x (darwin), ubuntu</div>
+				
+				<div>
+					Posts: 940
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_1825192_119727">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 32" border="0" title="Reputation: 32"> <!-- <smallfont>(32)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_1825192" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_1825192"><!-- google_ad_section_start -->do these not supply you with enough information?<br>
+what do you need it for?<br>
+does this not work?<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_1825192">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 1825192 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825192_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Nathanael</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/nathanael-119727/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Nathanael-119727/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=119727">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=119727">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.dihedral.de/">Visit Nathanael's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=119727" rel="nofollow">Find More Posts by Nathanael</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825192 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825192 --><!-- post #1825198 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825198" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825198" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825198"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 06:44 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825198" rel="nofollow" id="postcount1825198" name="5"><strong>5</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825198">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->laxmi_cs<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Aug 2005</div>
+				<div>Location: india</div>
+				
+				
+				<div>
+					Posts: 7
+				</div>
+				
+				<!-- Threadauthor -->
+
+
+<br><strong>Original Poster</strong>
+<!-- / Threadauthor -->
+				
+				<br><div><span id="repdisplay_1825198_201094">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 1" border="0" title="Reputation: 1"> <!-- <smallfont>(1)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_1825198" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_1825198"><!-- google_ad_section_start -->Sorry, I want to store model number, vender information, and how many cpu's are there to some variables so that i can display same things on the browser<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_1825198">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 1825198 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825198_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">laxmi_cs</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/laxmi_cs-201094/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/laxmi_cs-201094/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=201094">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=201094">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=201094" rel="nofollow">Find More Posts by laxmi_cs</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825198 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825198 --><!-- post #1825286 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit1825286" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post1825286" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post1825286"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-29-2005, 08:09 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post1825286" rel="nofollow" id="postcount1825286" name="6"><strong>6</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_1825286">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->seran<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Aug 2004</div>
+				<div>Location: Bangalore</div>
+				
+				
+				<div>
+					Posts: 64
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_1825286_132602">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 16" border="0" title="Reputation: 16"> <!-- <smallfont>(16)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_1825286" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_1825286"><!-- google_ad_section_start -->you can open this file /proc/cpuinfo from your C program, and store those vendor_id, model name fields in to variables. this is one way. this will require lots of string processing work.<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_1825286">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 1825286 popup menu -->
+<div class="vbmenu_popup" id="postmenu_1825286_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">seran</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/seran-132602/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/seran-132602/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=132602">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=132602">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=132602" rel="nofollow">Find More Posts by seran</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 1825286 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #1825286 --><!-- post #2394492 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2394492" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2394492" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2394492"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-25-2006, 03:52 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2394492" rel="nofollow" id="postcount2394492" name="7"><strong>7</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2394492">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->grep65535<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Jul 2006</div>
+				<div>Location: Seattle, WA</div>
+				<div>Distribution: Fedora, RHEL, CentOS</div>
+				
+				<div>
+					Posts: 29
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2394492_284297">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 18" border="0" title="Reputation: 18"> <!-- <smallfont>(18)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_2394492" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2394492"><!-- google_ad_section_start -->/usr/sbin/./x86info -a<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2394492">		
+								
+				
+				
+					
+						1 members found this post helpful.
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2394492 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2394492_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">grep65535</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/grep65535-284297/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/grep65535-284297/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=284297">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=284297">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=284297" rel="nofollow">Find More Posts by grep65535</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2394492 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2394492 --><!-- post #2394918 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2394918" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2394918" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2394918"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-25-2006, 11:01 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2394918" rel="nofollow" id="postcount2394918" name="8"><strong>8</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2394918">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Matir<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Moderator</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Nov 2004</div>
+				<div>Location: San Jose, CA</div>
+				<div>Distribution: Ubuntu</div>
+				
+				<div>
+					Posts: 8,505
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2394918_149644">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"><img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"> <!-- <smallfont>(115)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_2394918" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2394918"><!-- google_ad_section_start -->x86info is hardly a standard utility.<br>
+<br>
+/proc/cpuinfo is the standard interface to the kernel's information regarding CPUs.  It is the best option for getting the information you want.  There are several scripts on here and other sites that show how to extract the relevant information.<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2394918">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2394918 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2394918_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Matir</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/matir-149644/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Matir-149644/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=149644">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=149644">View HCL Entries</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://wiki.linuxquestions.org/index.php?title=Special:Contributions&target=Matir">View LQ Wiki Contributions</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://systemoverlord.com/">Visit Matir's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=149644" rel="nofollow">Find More Posts by Matir</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2394918 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2394918 --><!-- post #2394919 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2394919" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2394919" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2394919"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-25-2006, 11:01 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2394919" rel="nofollow" id="postcount2394919" name="9"><strong>9</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2394919">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Matir<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Moderator</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Nov 2004</div>
+				<div>Location: San Jose, CA</div>
+				<div>Distribution: Ubuntu</div>
+				
+				<div>
+					Posts: 8,505
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2394919_149644">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"><img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"> <!-- <smallfont>(115)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_2394919" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2394919"><!-- google_ad_section_start -->Moved: This thread is more suitable in Programming and has been moved accordingly to help your thread/question get the exposure it deserves.<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2394919">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2394919 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2394919_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Matir</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/matir-149644/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Matir-149644/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=149644">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=149644">View HCL Entries</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://wiki.linuxquestions.org/index.php?title=Special:Contributions&target=Matir">View LQ Wiki Contributions</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://systemoverlord.com/">Visit Matir's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=149644" rel="nofollow">Find More Posts by Matir</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2394919 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2394919 --><!-- post #2394927 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2394927" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2394927" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2394927"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-25-2006, 11:06 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2394927" rel="nofollow" id="postcount2394927" name="10"><strong>10</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2394927">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->xhi<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Senior Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Mar 2005</div>
+				<div>Location: USA::Pennsylvania</div>
+				<div>Distribution: Slackware</div>
+				
+				<div>
+					Posts: 1,065
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2394927_174554">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 45" border="0" title="Reputation: 45"> <!-- <smallfont>(45)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_2394927" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2394927"><!-- google_ad_section_start -->i agree with Nathanael<br>
+<br>
+this is why<br>
+<br>
+`cat /proc/cpuinfo`<br>
+<div style="margin:20px; margin-top:5px">
+	<div class="smallfont" style="margin-bottom:2px">Code:</div>
+	<pre class="bbcodeblock" dir="ltr" style="
+		margin: 0px;
+		margin-right: -99999px;
+		padding: 3px;
+		border: 1px inset;
+		width: 98%;
+		height: 498px;
+		text-align: left;
+		overflow: auto">processor       : 0
+vendor_id       : GenuineIntel
+cpu family      : 15
+model           : 2
+model name      : Intel(R) Xeon(TM) CPU 3.06GHz
+stepping        : 9
+cpu MHz         : 3057.662
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+fdiv_bug        : no
+hlt_bug         : no
+f00f_bug        : no
+coma_bug        : no
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 2
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe cid xtpr
+bogomips        : 6119.81
+
+processor       : 1
+vendor_id       : GenuineIntel
+cpu family      : 15
+model           : 2
+model name      : Intel(R) Xeon(TM) CPU 3.06GHz
+stepping        : 9
+cpu MHz         : 3057.662
+cache size      : 512 KB
+physical id     : 0
+siblings        : 2
+core id         : 0
+cpu cores       : 1
+fdiv_bug        : no
+hlt_bug         : no
+f00f_bug        : no
+coma_bug        : no
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 2
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe cid xtpr
+bogomips        : 6112.78</pre>
+</div>what more do you need?<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2394927">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2394927 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2394927_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">xhi</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/xhi-174554/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/xhi-174554/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=174554">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=174554">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=174554" rel="nofollow">Find More Posts by xhi</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2394927 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2394927 --><!-- post #2395942 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2395942" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2395942" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2395942"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-26-2006, 05:24 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2395942" rel="nofollow" id="postcount2395942" name="11"><strong>11</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2395942">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->lkg<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Aug 2006</div>
+				
+				
+				
+				<div>
+					Posts: 13
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2395942_286309">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_balance.gif" alt="Reputation: 0" border="0" title="Reputation: 0"> <!-- <smallfont>(0)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_2395942" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2395942"><!-- google_ad_section_start -->Here i cant see the unique cpuid how to retriew that cpuid?????????<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2395942">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2395942 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2395942_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">lkg</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/lkg-286309/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/lkg-286309/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=286309">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=286309">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=286309" rel="nofollow">Find More Posts by lkg</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2395942 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2395942 --><!-- post #2395992 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2395992" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2395992" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2395992"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-26-2006, 06:24 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2395992" rel="nofollow" id="postcount2395992" name="12"><strong>12</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2395992">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->cupubboy<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: May 2003</div>
+				<div>Location: Bucharest,Romania</div>
+				<div>Distribution: Fedora Core 7</div>
+				
+				<div>
+					Posts: 109
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2395992_31155">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 15" border="0" title="Reputation: 15"> <!-- <smallfont>(15)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_2395992" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2395992"><!-- google_ad_section_start -->Who are you?<br>
+<br>
+CPUID is an cpu instruction .. look here for details <a href="http://www.paradicesoftware.com/specs/cpuid/index.htm" target="_blank" rel="nofollow">http://www.paradicesoftware.com/specs/cpuid/index.htm</a><br>
+<br>
+Although the best reading material are the manuals from intel's site Cheers<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2395992">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2395992 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2395992_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">cupubboy</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/cupubboy-31155/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/cupubboy-31155/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=31155">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=31155">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=31155" rel="nofollow">Find More Posts by cupubboy</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2395992 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2395992 --><!-- post #2396221 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2396221" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2396221" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2396221"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-26-2006, 11:07 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2396221" rel="nofollow" id="postcount2396221" name="13"><strong>13</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2396221">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Matir<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Moderator</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Nov 2004</div>
+				<div>Location: San Jose, CA</div>
+				<div>Distribution: Ubuntu</div>
+				
+				<div>
+					Posts: 8,505
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2396221_149644">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"><img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 115" border="0" title="Reputation: 115"> <!-- <smallfont>(115)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_2396221" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2396221"><!-- google_ad_section_start -->Though I'm not sure why you need the CPUID.  /proc/cpuinfo contains all the information from CPUID, already decoded for you.<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2396221">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2396221 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2396221_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Matir</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/matir-149644/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Matir-149644/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=149644">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=149644">View HCL Entries</a></td></tr>
+	
+	
+	<tr><td class="vbmenu_option"><a href="http://wiki.linuxquestions.org/index.php?title=Special:Contributions&target=Matir">View LQ Wiki Contributions</a></td></tr>
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://systemoverlord.com/">Visit Matir's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=149644" rel="nofollow">Find More Posts by Matir</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2396221 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2396221 --><!-- post #2396263 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2396263" style="padding:0px 0px 3px 0px">
+	<!-- this is not the last post shown on the page -->
+
+
+
+<table id="post2396263" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2396263"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-26-2006, 11:52 AM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2396263" rel="nofollow" id="postcount2396263" name="14"><strong>14</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt1" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2396263">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->Nightfrost<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">Member</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Jun 2004</div>
+				<div>Location: Sweden</div>
+				<div>Distribution: ArchLinux</div>
+				
+				<div>
+					Posts: 201
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2396263_122591">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 30" border="0" title="Reputation: 30"> <!-- <smallfont>(30)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt1" id="td_post_2396263" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2396263"><!-- google_ad_section_start -->I actually have a similar problem. I'm trying to write a set of scripts for which I need to know the pentium-m cpu model of the current computer. That is, I need to know if it's p-m 753, p-m 725, etc. I can't find that information in /proc/cpuinfo. Is there a way to find that out?<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt1" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt1" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2396263">		
+								
+				
+				
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2396263 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2396263_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Nightfrost</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/nightfrost-122591/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/Nightfrost-122591/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=122591">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=122591">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.naderehvandi.net/">Visit Nightfrost's homepage!</a></td></tr>
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=122591" rel="nofollow">Find More Posts by Nightfrost</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2396263 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2396263 --><!-- post #2396472 -->
+
+	<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+	<div id="edit2396472" style="padding:0px 0px 3px 0px">
+	
+
+
+
+<table id="post2396472" class="tborder" cellpadding="3" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr>
+	
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-right: 0px">		
+			<!-- status icon and date -->
+			<a name="post2396472"><img class="inlineimg" src="./get cpu info_files/post_old.gif" alt="Old" border="0" title="Old"></a>
+			08-26-2006, 04:12 PM
+			
+			<!-- / status icon and date -->
+		</td>
+		<td class="thead" style="font-weight:normal; border: 1px solid #FFFFFF; border-left: 0px" align="right">
+			&nbsp;
+		
+			#<a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#post2396472" rel="nofollow" id="postcount2396472" name="15"><strong>15</strong></a>
+			
+		
+		</td>
+	
+</tr>
+<tr valign="top">
+	<td class="alt2" width="175" style="border: 1px solid #FFFFFF; border-top: 0px; border-bottom: 0px">			
+			<div id="postmenu_2396472">
+				<div class="bigusername">
+				<!-- google_ad_section_start(weight=ignore) -->grep65535<!-- google_ad_section_end --></div>
+				
+			</div>
+			<div class="smallfont">LQ Newbie</div>
+			
+			
+			
+			
+			
+			<div class="smallfont">
+				&nbsp;<br>
+				<div>Registered: Jul 2006</div>
+				<div>Location: Seattle, WA</div>
+				<div>Distribution: Fedora, RHEL, CentOS</div>
+				
+				<div>
+					Posts: 29
+				</div>
+				
+				
+				
+				<br><div><span id="repdisplay_2396472_284297">Rep: <img class="inlineimg" src="./get cpu info_files/reputation_pos.gif" alt="Reputation: 18" border="0" title="Reputation: 18"> <!-- <smallfont>(18)</smallfont>--></span></div>
+				
+				<div>    </div>
+			</div>					
+	</td>
+	
+	<td class="alt2" id="td_post_2396472" style="border-right: 1px solid #FFFFFF">
+	
+		
+		
+		
+
+		<!-- message -->
+
+
+		<div id="post_message_2396472"><!-- google_ad_section_start --><div style="margin:20px; margin-top:5px; ">
+	<div class="smallfont" style="margin-bottom:2px">Quote:</div>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+	<tbody><tr>
+		<td class="bbcodeblock" style="border:1px inset">
+			
+				<div>
+					Originally Posted by <strong>Matir</strong>
+					
+				</div>
+				<div style="font-style:italic">x86info is hardly a standard utility.<br>
+<br>
+/proc/cpuinfo is the standard interface to the kernel's information regarding CPUs.  It is the best option for getting the information you want.  There are several scripts on here and other sites that show how to extract the relevant information.</div>
+			
+		</td>
+	</tr>
+	</tbody></table>
+</div><br>
+i wasn't shooting for standard, more so toward another alternative to the already suggested methods, the guy asks for maybe another way beyond /proc/cpuinfo, i just threw one out there ;-p<!-- google_ad_section_end --></div>
+		<!-- / message -->
+	
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+	
+	</td>
+</tr>
+<tr>
+	<td class="alt2" style="border: 1px solid #FFFFFF; border-top: 0px">
+
+
+		
+
+		
+		
+		&nbsp;
+	</td>
+
+	
+	<td class="alt2" align="right" style="border: 1px solid #FFFFFF; border-left: 0px; border-top: 0px">
+	
+		<!-- controls -->
+	
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+				
+					
+			<div id="helpfulanswers_box_2396472">		
+								
+				
+				
+					
+						1 members found this post helpful.
+					
+				
+					
+					
+				
+				
+				
+				
+			</div>			
+			
+		
+		
+		<!-- / controls -->
+	</td>
+</tr>
+</tbody></table>
+
+
+
+<!-- post 2396472 popup menu -->
+<div class="vbmenu_popup" id="postmenu_2396472_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">grep65535</td>
+	</tr>
+	
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/user/grep65535-284297/">View Public Profile</a></td></tr>
+	
+	<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/blog/grep65535-284297/">View LQ Blog</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/reviews/showcat.php?cat=myprod&ppuser=284297">View Review Entries</a></td></tr>
+	<tr><td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/hcl/showcat.php?cat=myprod&ppuser=284297">View HCL Entries</a></td></tr>
+	
+	
+	
+	
+	
+	
+	
+		<tr><td class="vbmenu_option"><a href="http://www.linuxquestions.org/questions/search.php?do=finduser&u=284297" rel="nofollow">Find More Posts by grep65535</a></td></tr>
+	
+	
+	
+	</tbody></table>
+</div>
+<!-- / post 2396472 popup menu -->
+
+
+	</div>
+	
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<!-- / post #2396472 --><div id="lastpost"></div></div>
+
+<div align="center"><span style="float: left; margin-left: 20%;"><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- LQ Bottom - New (suggested) -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-4420048478783872" data-ad-slot="3227443407"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></span>&nbsp;&nbsp;<span style="float: left;"></span></div><br>
+<div style="clear: both;"><br></div>
+
+<!-- start content table -->
+<!-- open content container -->
+
+<div align="center">
+	<div class="page" style="width:100%; text-align:left">
+		<div style="padding:0px 0px 0px 0px" align="left">
+
+<!-- / start content table -->
+
+<!-- controls below postbits -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<tbody><tr valign="top">
+	
+		<td class="smallfont"><a href="http://www.linuxquestions.org/questions/newreply.php?do=newreply&noquote=1&p=2396472" rel="nofollow"><img src="./get cpu info_files/reply.gif" alt="Reply" border="0" title="Reply"></a></td>
+	
+	
+		<td align="right"><div class="pagenav" align="right">
+<table class="tborder" cellpadding="3" cellspacing="1" border="0">
+<tbody><tr>
+	<td class="vbmenu_control" style="font-weight:normal">Page 1 of 3</td>
+	
+	
+		<td class="alt2"><span class="smallfont" title="Showing results 1 to 15 of 42"><strong>1</strong></span></td>
+ <td class="alt1"><a class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page2.html" title="Show results 16 to 30 of 42">2</a></td><td class="alt1"><a class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page3.html" title="Show results 31 to 42 of 42">3</a></td>
+	<td class="alt1"><a rel="next" class="smallfont" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/page2.html" title="Next Page - Results 16 to 30 of 42">&gt;</a></td>
+	
+	<td class="vbmenu_control" title="" id="pagenav.259" style="cursor: pointer;"> <img src="./get cpu info_files/menu_open.gif" border="0" title="" alt=""></td>
+</tr>
+</tbody></table>
+</div>
+		
+		</td>
+	
+</tr>
+</tbody></table>
+<!-- / controls below postbits -->
+
+
+
+
+
+
+
+
+
+
+<!-- lightbox scripts -->
+	<script type="text/javascript" src="./get cpu info_files/vbulletin_lightbox.js"></script>
+	<script type="text/javascript">
+	<!--
+	vBulletin.register_control("vB_Lightbox_Container", "posts", 1);
+	//-->
+	</script>
+<!-- / lightbox scripts -->
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+<!-- currently active users -->
+
+<!-- end currently active users -->
+
+
+<!-- popup menu contents -->
+<br>
+
+<!-- thread tools menu -->
+<div class="vbmenu_popup" id="threadtools_menu" style="display:none">
+<form action="http://www.linuxquestions.org/questions/postings.php?t=358037&pollid=" method="post" name="threadadminform">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Thread Tools<a name="goto_threadtools"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/printer.gif" alt="Show Printable Version" title="Show Printable Version"> <a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037-print/" accesskey="3" rel="nofollow">Show Printable Version</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/sendtofriend.gif" alt="Email this Page" title="Email this Page"> <a href="http://www.linuxquestions.org/questions/sendmessage.php?do=sendtofriend&t=358037" rel="nofollow">Email this Page</a></td>
+	</tr>
+	
+	
+	
+			
+	
+	
+	</tbody></table>
+</form>
+</div>
+<!-- / thread tools menu -->
+
+<!-- **************************************************** -->
+
+
+<!-- thread search menu -->
+<div class="vbmenu_popup" id="threadsearch_menu" style="display:none">
+<form action="http://www.linuxquestions.org/questions/search.php?do=process&searchthreadid=358037" method="post">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">Search this Thread<a name="goto_threadsearch"></a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option" title="nohilite">
+			<input type="hidden" name="s" value="4b589c5ef8c5868e09b0d74f68b9f923">
+			<input type="hidden" name="securitytoken" value="guest">
+			<input type="hidden" name="do" value="process">
+			<input type="hidden" name="searchthreadid" value="358037">
+			<input type="text" class="bginput" name="query" size="25"><input type="submit" class="button" value="Go"><br>
+		</td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><a rel="nofollow" href="http://www.linuxquestions.org/questions/search.php?searchthreadid=358037">Advanced Search</a></td>
+	</tr>
+	</tbody></table>
+</form>
+</div>
+<!-- / thread search menu -->
+
+
+<!-- **************************************************** -->
+
+
+
+<!-- / popup menu contents -->
+
+
+<!-- forum rules and admin links -->
+<table cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+<tbody><tr valign="bottom">
+	<td class="smallfont" align="left">
+		<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="210">
+<thead>
+<tr>
+	<td class="thead">
+		<a style="float:right" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#top" onclick="return toggle_collapse(&#39;forumrules&#39;)"><img id="collapseimg_forumrules" src="./get cpu info_files/collapse_thead.gif" alt="" border="0"></a>
+		Posting Rules
+	</td>
+</tr>
+</thead>
+<tbody id="collapseobj_forumrules" style="">
+<tr>
+	<td class="alt1" nowrap="nowrap"><div class="smallfont">
+		
+		<div>You <strong>may not</strong> post new threads</div>
+		<div>You <strong>may not</strong> post replies</div>
+		<div>You <strong>may not</strong> post attachments</div>
+		<div>You <strong>may not</strong> edit your posts</div>
+		<hr>
+		
+		<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div>
+		<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div>
+		<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>Off</strong></div>
+		<div>HTML code is <strong>Off</strong></div><div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=linkbacks#trackbacks" target="_blank">Trackbacks</a> are <strong>Off</strong></div>
+<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=linkbacks#pingbacks" target="_blank">Pingbacks</a> are <strong>On</strong></div>
+<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=linkbacks#refbacks" target="_blank">Refbacks</a> are <strong>Off</strong></div>
+		<hr>
+		<div><a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=showrules" target="_blank">Forum Rules</a></div>
+	</div></td>
+</tr>
+</tbody>
+</table>
+	</td>
+	<td class="smallfont" align="right">
+		<table cellpadding="0" cellspacing="0" border="0">
+		
+		<tbody><tr>
+			<td>
+			
+			</td>
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+<!-- /forum rules and admin links -->
+
+<br>
+
+
+<table class="tborder" cellpadding="3" cellspacing="1" border="0" width="100%" align="center">
+<thead>
+	<tr>
+		<td class="tcat" width="100%" colspan="5">
+			<a style="float:right" href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#top" onclick="return toggle_collapse(&#39;similarthreads&#39;)"><img id="collapseimg_similarthreads" src="./get cpu info_files/collapse_tcat.gif" alt="" border="0"></a>
+			Similar Threads<a name="similarthreads"></a>
+		</td>
+	</tr>
+</thead>
+<tbody id="collapseobj_similarthreads" style="">
+<tr class="thead" align="center">
+	<td class="thead" width="40%">Thread</td>
+	<td class="thead" width="15%" nowrap="nowrap">Thread Starter</td>
+	<td class="thead" width="20%">Forum</td>
+	<td class="thead" width="5%">Replies</td>
+	<td class="thead" width="20%">Last Post</td>
+</tr>
+<tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="http://www.linuxquestions.org/questions/linux-general-1/how-to-find-how-many-cpu%27s-are-active-in-8-cpu-linux-machine-280387/" title="HI , 
+I am working on 8 CPU Linux machine but in one scenario I need to test the application using  only 2 CPU. 
+Is there any command through which..." target="_blank">How to find how many CPU's are active in 8 CPU Linux machine</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">sumit_sinha</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - General</span></td>
+	<td class="alt2" align="center"><span class="smallfont">11</span></td>
+	<td class="alt1" align="right"><span class="smallfont">03-29-2011 <span class="time">11:53 AM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="http://www.linuxquestions.org/questions/programming-9/cpu-information-structure-378330/" title="I&#39;m creating a number of Kernel modules to display specific information about the system but i&#39;m not sure what header files/structures to use. 
+ 
+I..." target="_blank">CPU information structure</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">alltime</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Programming</span></td>
+	<td class="alt2" align="center"><span class="smallfont">2</span></td>
+	<td class="alt1" align="right"><span class="smallfont">10-31-2005 <span class="time">06:58 AM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="http://www.linuxquestions.org/questions/programming-9/multithreaded-system-on-4-cpu-linux-machine-process-stuck-on-certain-thread-179941/" title="hello All, 
+ 
+i&#39;ve developed a process that uses 5-20 threads. 
+after several seconds from start of the program the process hangs 
+doing only one of..." target="_blank">Multithreaded System On 4 Cpu Linux Machine, process stuck on certain thread</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">eyalzm</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Programming</span></td>
+	<td class="alt2" align="center"><span class="smallfont">1</span></td>
+	<td class="alt1" align="right"><span class="smallfont">05-10-2004 <span class="time">12:46 PM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="http://www.linuxquestions.org/questions/linux-general-1/switching-off-a-cpu-of-a-multiple-cpu-machine-129005/" title="Hi  
+ 
+I wanted to find out the procedure if 
+ 
+  1) a CPU in a multiple processor machine can be switched off at a OS level. 
+  2) If I can bind a..." target="_blank">Switching off a CPU of a multiple CPU machine</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">kravisudhakar</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - General</span></td>
+	<td class="alt2" align="center"><span class="smallfont">1</span></td>
+	<td class="alt1" align="right"><span class="smallfont">12-26-2003 <span class="time">11:13 AM</span></span></td>
+</tr><tr>
+	<td class="alt1" align="left">
+		
+		<span class="smallfont"> <a href="http://www.linuxquestions.org/questions/linux-software-2/cpu-0-machine-check-exception-17273/" title="Hi, 
+While trying to install redhat7.2 on a P100MHZ(SCSI HDD) I get an error message similar to the following error message: 
+ 
+CPU#0:Machine Check..." target="_blank">CPU#0:Machine Check Exception</a></span>
+	</td>
+	<td class="alt2" nowrap="nowrap"><span class="smallfont">karamboul</span></td>
+	<td class="alt1" nowrap="nowrap"><span class="smallfont">Linux - Software</span></td>
+	<td class="alt2" align="center"><span class="smallfont">1</span></td>
+	<td class="alt1" align="right"><span class="smallfont">03-29-2002 <span class="time">11:33 PM</span></span></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<!-- end content table  -->
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+<!-- / end content table -->
+
+</div>
+
+<br>
+<div class="smallfont" align="center">All times are GMT -5. The time now is <span class="time">04:56 PM</span>.</div>
+<br>
+<!-- /content area table -->
+
+<form action="http://www.linuxquestions.org/questions/" method="get">
+<table cellpadding="3" cellspacing="0" border="0" width="100%" class="page" align="center">
+<tbody><tr>
+	
+	
+	<td class="tfoot" align="right" width="100%">
+		<div class="smallfont">
+			<strong>
+				<a href="http://www.linuxquestions.org/questions/sendmessage.php" rel="nofollow">Contact Us</a> -
+				<a href="http://www.linuxquestions.org/linux/adinfo.html">Advertising Info</a> - 
+				<a href="http://www.linuxquestions.org/linux/rules.html">Rules</a> - 
+				<a href="http://www.zazzle.com/linuxquestions*" rel="nofollow">LQ Merchandise</a> - 
+				<a href="http://www.linuxquestions.org/linux/donation.html">Donations</a> - 
+				<a href="http://www.linuxquestions.org/linux/member.html">Contributing Member</a> - 
+				<a href="http://www.linuxquestions.org/linux/sitemap.html">LQ Sitemap</a> - 
+				
+				
+				
+			</strong>
+		</div>
+	</td>
+</tr>
+</tbody></table>
+
+</form>
+
+
+<!-- START: LQ Table Bottom -->
+</td>
+<td width="165px" class="page" style="padding-left:5px" valign="top">
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tbody><tr><td class="vbmenu_control">Main Menu</td></tr>
+<tr><td class="alt1">
+<ul class="lqrightmenu">
+<li><a href="http://www.linuxquestions.org/questions/">Linux Forums</a></li>
+<li><a href="http://www.androidquestions.org/forum.php">Android Forum</a></li>
+<li><a href="http://www.chromeosquestions.org/forum.php">Chrome OS Forum</a></li>
+<li><a href="http://www.linuxquestions.org/questions/search.php">Search</a></li>
+<li><a href="http://www.linuxquestions.org/questions/tags/" rel="nofollow">LQ Tags</a></li>
+<li><a href="http://www.linuxquestions.org/hcl/">Linux HCL</a></li>
+<li><a href="http://www.linuxquestions.org/linux/answers/">Linux Tutorials</a></li>
+<li><a href="http://jobs.linuxquestions.org/" target="_blank">LQ Job Marketplace</a></li>
+<li><a href="http://wiki.linuxquestions.org/">Linux Wiki</a></li>
+<li><a href="http://www.linuxquestions.org/reviews/index.php/cat/2">Distro Reviews</a></li>
+<li><a href="http://www.linuxquestions.org/reviews/index.php/cat/15">Book Reviews</a></li>
+<li><a href="http://iso.linuxquestions.org/">Download Linux</a></li>
+<!-- <li><a href="http://radio.linuxquestions.org/linux/lq-podcasts/">Linux Podcast</a></li> -->
+<li><a href="http://www.linuxquestions.org/questions/groups/">Social Groups</a></li>
+<li><a href="http://www.linuxquestions.org/questions/blog/">LQ Blogs</a></li>
+<!-- <li><a href="http://radio.linuxquestions.org/">LQ Radio</a></li> -->
+<li><a href="http://www.linuxquestions.org/">Home</a></li>
+</ul>
+<div align="center"><a href="http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/#main_cont">(Con't)</a></div>
+</td></tr>
+</tbody></table>
+
+
+
+
+<div style="text-align:center;margin-bottom:5px" class="alt1">
+<script type="text/javascript" src="http://ap.lijit.com/www/delivery/fpi.js?z=136509&u=linuxquestions&width=160&height=600"></script>
+</div>
+
+
+<!-- netseer_side -->
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tbody><tr><td class="vbmenu_control">My LQ</td></tr>
+<tr><td class="alt1"><ul class="lqrightmenu">
+<li><a href="http://www.linuxquestions.org/questions/lqlogin.php">Login</a></li>
+<li><a href="http://www.linuxquestions.org/questions/register.php">Register</a></li>
+
+</ul>
+<div style="text-align:center;margin-bottom:5px" class="alt1">
+<script type="text/javascript" src="http://s.skimresources.com/js/21603X797475X981.adunit.js"></script>
+</div>
+</td></tr>
+</tbody></table>
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tbody><tr><td class="vbmenu_control">Write for LQ</td></tr>
+<tr><td class="alt1">
+LinuxQuestions.org is looking for people interested in writing
+Editorials, Articles, Reviews, and more. If you'd like to contribute
+content, <a href="http://www.linuxquestions.org/questions/sendmessage.php">let us know</a>.
+</td></tr>
+</tbody></table>
+
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tbody><tr><td class="vbmenu_control" id="main_cont">Main Menu</td></tr>
+<tr><td class="alt1">
+<ul class="lqrightmenu">
+<li><a href="http://www.linuxquestions.org/questions/calendar.php">LQ Calendar</a></li>
+<li><a href="http://www.linuxquestions.org/linux/rules.html">LQ Rules</a></li>
+<li><a href="http://www.linuxquestions.org/linux/sitemap.html">LQ Sitemap</a></li>
+<li><a href="http://www.linuxquestions.org/questions/faq.php">Site FAQ</a></li>
+<li><a rel="nofollow" href="http://www.linuxquestions.org/questions/search.php?do=getnew">View New Posts</a></li>
+<li><a rel="nofollow" href="http://www.linuxquestions.org/questions/lqsearch.php?do=getnew&daysprune=7">View Latest Posts</a></li>
+<li><a rel="nofollow" href="http://www.linuxquestions.org/questions/lqsearch.php?do=noreplies">Zero Reply Threads</a></li>
+<li><a href="http://wiki.linuxquestions.org/wiki/Special:Wantedpages">LQ Wiki Most Wanted</a></li>
+<li><a href="http://jeremy.linuxquestions.org/">Jeremy's Blog</a></li>
+<li><a href="http://www.linuxquestions.org/questions/project.php">Report LQ Bug</a></li>
+</ul>
+</td></tr>
+</tbody></table>
+<table style="margin-bottom:5px" cellpadding="2" cellspacing="0" border="0" width="100%" class="tborder" align="center">
+<tbody><tr><td class="vbmenu_control">Syndicate</td></tr>
+<tr><td class="alt1">
+<a href="http://www.linuxquestions.org/syndicate/lqlatest.xml"><img src="./get cpu info_files/rss.gif" alt="RSS1" border="0" width="16" height="16" title="RSS1"></a>&nbsp; Latest Threads<br>
+<a href="http://www.linuxquestions.org/syndicate/lqnews.rss"><img src="./get cpu info_files/rss.gif" alt="RSS1" border="0" width="16" height="16" title="RSS1"></a>&nbsp; LQ News<br>
+<!-- <a href="http://radio.linuxquestions.org/syndicate/lqpodcast.php"><img src="https://lqo-thequestionsnetw.netdna-ssl.com/questions/images/misc/rss.gif" alt="RSS2" border="0" width="16" height="16" /></a>&nbsp; LQ Podcast<br />
+<a href="http://radio.linuxquestions.org/syndicate/lqradio.php"><img src="https://lqo-thequestionsnetw.netdna-ssl.com/questions/images/misc/rss.gif" alt="RSS2" border="0" width="16" height="16" /></a>&nbsp; LQ Radio<br /> -->
+<div class="smallfont">Twitter: <a href="http://twitter.com/linuxquestions" rel="nofollow">@linuxquestions</a><br>
+identi.ca: <a href="http://identi.ca/linuxquestions" rel="nofollow">@linuxquestions</a><br>
+Facebook: <a href="http://www.facebook.com/LinuxQuestions.org" rel="nofollow">@linuxquestions</a>
+</div>
+</td></tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- END: LQ Table Bottom -->
+
+
+		</div>
+	</div>
+</div>
+
+<!-- / close content container -->
+
+<div align="center">
+	<div class="smallfont" align="center">
+<a href="http://www.lqconsulting.com/">Open Source Consulting</a> |
+<a href="http://www.lqconsulting.com/client/check.php">Domain Registration</a>
+</div><br><br>
+	
+	<div class="smallfont" align="center">
+	
+	</div>
+</div>
+
+
+<script type="text/javascript">
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</script>
+
+
+<script type="text/javascript">
+var dc_UnitID = 14;
+var dc_PublisherID = 4566;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+</script>
+<script type="text/javascript" src="http://kona.kontera.com/javascript/lib/KonaLibInline.js"></script><script type="text/javascript" src="http://s.skimresources.com/js/21603X797475.skimlinks.js"></script>
+
+
+<!-- temp -->
+<div style="display:none">
+	<!-- thread rate -->
+	
+		
+	
+	<!-- / thread rate -->
+</div>
+<div class="vbmenu_popup" id="linkbacktools_menu" style="display:none">
+	<table cellpadding="4" cellspacing="1" border="0">
+	<tbody><tr>
+		<td class="thead">LinkBack<a name="goto_linkback"></a></td>
+	</tr>
+
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/linkback_url.gif" alt="LinkBack URL"> <a href="./get cpu info_files/get cpu info.html" onclick="prompt(&#39;Use the following URL when referencing this thread from another forum or blog.&#39;,&#39;http://www.linuxquestions.org/questions/programming-9/how-to-get-cpu-information-on-linux-machine-358037/&#39;);return false;">LinkBack URL</a></td>
+	</tr>
+	<tr>
+		<td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/linkback_about.gif" alt="About LinkBacks"> <a rel="nofollow" href="http://www.linuxquestions.org/questions/misc.php?do=linkbacks">About LinkBacks</a></td>
+	</tr>
+
+	<tr>
+		<td class="thead">Bookmark &amp; Share</td>
+	</tr>
+<!-- <tr><td class="vbmenu_option">g_plusone </td></tr> -->
+	<tr><td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/digg.gif" alt="Digg this Thread!"> <a rel="nofollow" href="http://digg.com/submit?phase=2&url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fprogramming-9%2Fhow-to-get-cpu-information-on-linux-machine-358037%2F&title=how+to+get+cpu+information+on+Linux+machine" target="_blank">Digg this Thread!</a><a name="vbseodm_0"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/delicious.gif" alt="Add Thread to del.icio.us"> <a rel="nofollow" href="http://del.icio.us/post?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fprogramming-9%2Fhow-to-get-cpu-information-on-linux-machine-358037%2F&title=how+to+get+cpu+information+on+Linux+machine" target="_blank">Add Thread to del.icio.us</a><a name="vbseodm_1"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/twitter.png" alt="Tweet this thread"> <a rel="nofollow" href="http://twitter.com/home?status=how+to+get+cpu+information+on+Linux+machine%20http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fprogramming-9%2Fhow-to-get-cpu-information-on-linux-machine-358037%2F" target="_blank">Tweet this thread</a><a name="vbseodm_2"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/facebook.gif" alt="Share on Facebook"> <a rel="nofollow" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fprogramming-9%2Fhow-to-get-cpu-information-on-linux-machine-358037%2F" target="_blank">Share on Facebook</a><a name="vbseodm_3"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="./get cpu info_files/reddit.gif" alt="Reddit!"> <a rel="nofollow" href="http://reddit.com/submit?url=http%3A%2F%2Fwww.linuxquestions.org%2Fquestions%2Fprogramming-9%2Fhow-to-get-cpu-information-on-linux-machine-358037%2F&title=how+to+get+cpu+information+on+Linux+machine" target="_blank">Reddit!</a><a name="vbseodm_4"></a></td></tr>
+
+	</tbody></table>
+</div>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash.substring(1);var cpost2='';if(cpost && (typeof fetch_object != 'undefined')){ var ispost=cpost.substring(0,4)=='post';if(ispost)cpost2='post_'+cpost.substring(4);if((cobj = fetch_object(cpost))||(cobj = fetch_object(cpost2))){cobj.scrollIntoView(true);}else if(ispost){cpostno = cpost.substring(4,cpost.length);if(parseInt(cpostno)>0){location.replace('http://www.linuxquestions.org/questions/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+//]]>
+</script>
+
+<div id="__lpform_navbar_username_numspan" style="display: none; z-index: 35 !important;"></div><div id="__lpform_navbar_username" intrinsic="sites" style="max-height: 16px; vertical-align: top; position: absolute; top: 167.5px; left: 996px; z-index: 34;"><img id="__lpform_navbar_username_icon" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/images/svg/sites16x16.svg" onerror="this.removeAttribute(&#39;onerror&#39;); this.src = &#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVQ4T7WTjRHBUBCEkw50gApQgehACXRABaICOqADLUQHOkAHSrCfuZjzvCdmws3svL+9vdvLJM9aRt4yP0sJ9CQMKiswtPUUFowJLERaCTeh7xIH2q+F0oukBDZGmtu6c+d9kwDvtD4WLkbGzlEoPlmA1DXCVes5IM+cIO8PcW8Bb3j/Jp6z+KkAFgDBWg+u7mhkm461/2bBt17pwBDxSjAb7iahv9hnnIp0MGL4GZe633qRmEApAsOkOlYI2qV13hoFSCAR0DZRmAhCL/G3nykslDzfAe0PJRG6UnPYAAAAAElFTkSuQmCC&#39;;" style="opacity: 0.6; vertical-align: top;" height="16" width="16"></div><div id="__lpform_vb_login_password_numspan" style="display: none; z-index: 35 !important;"></div><div id="__lpform_vb_login_password" intrinsic="sites" style="max-height: 16px; vertical-align: top; position: absolute; top: 193.5px; left: 996px; z-index: 34;"><img id="__lpform_vb_login_password_icon" src="chrome-extension://hdokiejnpimakedhajhdlcegeplioahd/images/svg/sites16x16.svg" onerror="this.removeAttribute(&#39;onerror&#39;); this.src = &#39;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA2ElEQVQ4T7WTjRHBUBCEkw50gApQgehACXRABaICOqADLUQHOkAHSrCfuZjzvCdmws3svL+9vdvLJM9aRt4yP0sJ9CQMKiswtPUUFowJLERaCTeh7xIH2q+F0oukBDZGmtu6c+d9kwDvtD4WLkbGzlEoPlmA1DXCVes5IM+cIO8PcW8Bb3j/Jp6z+KkAFgDBWg+u7mhkm461/2bBt17pwBDxSjAb7iahv9hnnIp0MGL4GZe633qRmEApAsOkOlYI2qV13hoFSCAR0DZRmAhCL/G3nykslDzfAe0PJRG6UnPYAAAAAElFTkSuQmCC&#39;;" style="opacity: 0.6; vertical-align: top;" height="16" width="16"></div><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
